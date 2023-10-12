@@ -7,13 +7,13 @@ chr_file_2 = "anno_file_1.txt"
 
 head(read.table(chr_file_1,sep = "\t"))
 
-head(read.table(anno_file_1,sep = "\t"))
+head(read.table(chr_file_2,sep = "\t"))
 
 
-chromoMap(chr_file_1,anno_file_1)
+chromoMap(chr_file_1,chr_file_2)
 
 
-chromoMap(chr_file_1,anno_file_1,
+chromoMap(chr_file_1,chr_file_2,
           n_win.factor = 3,
           win.summary.display = T)
 
